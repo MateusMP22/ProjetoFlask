@@ -1,27 +1,39 @@
 /* Formulários de login e de cadastro de entrada */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #96FF92;
-    margin-bottom: 20px;
-    margin-top: 50px;
+body{
+    background-color: #2F4F4F;
+}
+
+h1{
+    color: #F8F8FF;
 }
 
 h2 {
     margin-bottom: 20px;
     text-align: center;
 }
+
+h3 {
+    color: #87CEEB;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #5F9EA0;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
 label {
     display: block;
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"] {
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -47,12 +59,43 @@ p {
     text-align: center;
     margin-top: 10px;
 }
+p{
+color: #87CEEB;
+}
 
 p a {
-    color: #007bff;
+    color: #F8F8FF;
     text-decoration: none;
 }
 
 p a:hover {
+    color: #87CEEB;
     text-decoration: underline;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #87CEEB;
+
+}
+
+.menu a:hover {
+    color: #5e9bfc;
 }

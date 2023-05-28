@@ -25,7 +25,7 @@ def login():
 
         cursor = minha_conexao.cursor()
         cursor.execute("SELECT * FROM funcionarios WHERE email = %s", (email,))
-        result = cursor.fetchone()
+        result = cursor.fetchall()
         cursor.close()
 
         print(f'email: {email}')
@@ -203,7 +203,7 @@ def editar_produtor(id):
         minha_conexao.commit()
         cursor.close()
 
-        return redirect(url_for('homepage'))
+        return redirect(url_for('gerenciar_cadastros'))
 
     return render_template('editar_prod.html', produtor=result)
 

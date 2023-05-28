@@ -9,23 +9,22 @@
   	<link rel="stylesheet" href="/static/css/estilos.css">
 </head>
 <body>
-<h1>Página de Cadastros</h1>
-
-
-    <p><a href="/logout">Sair</a></p>
+<div class="container-fluid">
+	<h2>Página de Cadastros</h2>
+</div>
 
 	<div class="menu">
 		<ul>
 			<li><a href="/gerenciar_cadastros">Gerenciar cadastros</a></li>
 			<li><a href="/entradas">Cadastrar entradas de grãos</a></li>
+			<li><a href="/logout">Sair</a></li>
 		</ul>
 	</div>
-
 
 	<div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-		<h2>Produtores</h2>
+			<h3>Produtores</h3>
 			<form method="POST">
 				<input type="hidden" name="form_type" value="produtores">
 
@@ -48,7 +47,7 @@
 			</form>
 		</div>
 		<div class="col-md-6">
-			<h1>Motoristas</h1>
+			<h3>Motoristas</h3>
 			<form method="POST" >
 				<input type="hidden" name="form_type" value="motoristas">
 
@@ -66,7 +65,7 @@
     	</div>
 
 	<div class="col-md-6 offset-md-3">
-	<h1>Culturas</h1>
+	<h3>Culturas</h3>
 	<form method="POST" class="centered-form">
 		<input type="hidden" name="form_type" value="culturas">
 
@@ -85,7 +84,9 @@
 		</div>
 	</div>
 
+	<div class="container-fluid">
 	<p><a href="/">Página Inicial</a></p>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
